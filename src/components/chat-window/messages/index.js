@@ -26,9 +26,8 @@ const Messages = () => {
       messagesRef.off('value');
     };
   }, [chatId]);
-
   return (
-    <ul>
+    <ul style={{ listStyle: 'none', paddingInlineStart: '0px' }}>
       {isChatEmpty && <li>No messages yet</li>}
       {canShowMessages &&
         messages.map(msg => <MessageItem key={msg.id} message={msg} />)}
