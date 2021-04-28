@@ -3,7 +3,7 @@
     "profiles":{
       "$user_id":{
         ".read":"$user_id === auth.uid",
-        ".write":"$user_id === auth.uid",
+        ".write":"$user_id === auth.uid"
       }
     },
       "rooms":{
@@ -11,7 +11,7 @@
         ".write":"auth !== null",
       "room_id":{
         ".read":"auth !== null",
-        ".write":"auth !== null",
+        ".write":"auth !== null"
       }
     },
       "messages":{
@@ -19,24 +19,24 @@
         ".write":"auth !== null",
       "message_id":{
         ".read":"auth !== null",
-        ".write":"auth !== null",
+        ".write":"auth !== null"
       }
     },
       "status":{
       "$user_id":{
         ".read":"auth !== null",
-        ".write":"$user_id === auth.uid",
+        ".write":"$user_id === auth.uid"
       }
     },
     ".read": false,
     ".write": false
   }
-}{
+},{
   "rules": {
     "profiles":{
       "$user_id":{
         ".read":"$user_id === auth.uid",
-        ".write":"$user_id === auth.uid",
+        ".write":"$user_id === auth.uid"
       }
     },
       "rooms":{
@@ -44,21 +44,21 @@
         ".write":"auth !== null",
       "room_id":{
         ".read":"auth !== null",
-        ".write":"auth !== null",
+        ".write":"auth !== null"
       }
     },
       "messages":{
         ".read":"auth !== null",
-        ".write":"auth !== null",
+        ".write":"auth !== null"
       "message_id":{
         ".read":"auth !== null",
-        ".write":"auth !== null",
+        ".write":"auth !== null"
       }
     },
       "status":{
       "$user_id":{
         ".read":"auth !== null",
-        ".write":"$user_id === auth.uid",
+        ".write":"$user_id === auth.uid"
       }
     },
     ".read": false,
