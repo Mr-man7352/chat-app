@@ -5,9 +5,9 @@ import './styles/main.scss';
 import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import SignIn from './pages/SignIn';
 import PrivateRoute from './components/PrivateRoute';
+import { ProfileProvider } from './context/profile.context';
 import Home from './pages/Home';
 import PublicRoute from './components/PublicRoute';
-import { ProfileProvider } from './context/profile.context';
 
 function App() {
   return (
