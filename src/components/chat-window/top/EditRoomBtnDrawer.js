@@ -8,7 +8,7 @@ import EditableInput from '../../EditableInput';
 
 const EditRoomBtnDrawer = () => {
   const { isOpen, open, close } = useModalState();
-  const { chatId } = useParams;
+  const { chatId } = useParams();
   const isMobile = useMediaQuery('(max-width: 992)');
 
   const name = useCurrentRoom(v => v.name);
@@ -43,7 +43,7 @@ const EditRoomBtnDrawer = () => {
 
       <Drawer full={isMobile} show={isOpen} onHide={close} placement="right">
         <Drawer.Header>
-          <Drawer.Title>Edith Room</Drawer.Title>
+          <Drawer.Title>Edit Room</Drawer.Title>
         </Drawer.Header>
         <Drawer.Body>
           <EditableInput
