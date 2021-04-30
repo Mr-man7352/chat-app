@@ -43,7 +43,7 @@ const Chat = () => {
         <ChatTop />
       </div>
 
-      <div className="chat-middle">
+      <div className="chat-middle" style={{ height: 'auto' }}>
         <Messages />
       </div>
 
