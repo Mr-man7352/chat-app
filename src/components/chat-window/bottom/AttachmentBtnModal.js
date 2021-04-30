@@ -36,7 +36,7 @@ const AttachmentBtnModal = ({ afterUpload }) => {
         return {
           contentType: snap.metadata.contentType,
           name: snap.metadata.name,
-          url: await snap.ref.getDownLoadURL(),
+          url: await snap.ref.getDownloadURL(),
         };
       });
 
@@ -47,7 +47,7 @@ const AttachmentBtnModal = ({ afterUpload }) => {
       close();
     } catch (err) {
       setIsLoading(false);
-      Alert.error(err.message);
+      Alert.error(err.message, 10000);
     }
   };
 
